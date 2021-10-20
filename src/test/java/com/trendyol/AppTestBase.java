@@ -15,7 +15,7 @@ public class AppTestBase {
     WebDriverWait wait;
     @Before
     public void before(){
-     System.setProperty("webdriver.chrome.driver","src/chromedriver_win32/chromedriver.exe");
+     System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
      ChromeOptions options = new ChromeOptions();
      options.addArguments("start-maximized");
      driver = new ChromeDriver(options);
